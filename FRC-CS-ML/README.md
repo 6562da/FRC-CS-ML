@@ -4,9 +4,9 @@
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/Status-Under%20Review-orange.svg)
 
-A machine learning framework for predicting the compressive strength of fiber-reinforced concrete (FRC) using CatBoost.
+A machine learning framework for predicting the compressive strength of fiber-reinforced concrete (FRC).
 
-This repository is a public reproducibility package released while the manuscript is under review. It follows the same public-release boundary as `hollisterwong/UHPC-FS-ML`: primary dataset files, a CatBoost notebook, a GUI notebook, and basic output CSV files are available. Full manuscript materials and internal analysis pipelines will be released after publication.
+This repository is a public reproducibility package released while the manuscript is under review. It follows the same public-release boundary as `hollisterwong/UHPC-FS-ML`: primary dataset files, the CatBoost downstream-reference notebook used for interpretation-oriented reproduction, a GUI notebook, and basic output CSV files are available. The manuscript reports a broader protocol in which ExtraTrees is the single-split leader, StackingRegressor is the repeated-holdout mean leader, and CatBoost is retained as the downstream reference model from the statistically unresolved leading group. Full manuscript materials and internal analysis pipelines will be released after publication.
 
 ---
 
@@ -35,7 +35,7 @@ FRC-CS-ML/
 
 | Component | Status |
 |---|---|
-| CatBoost prediction notebook | Available |
+| CatBoost downstream-reference notebook | Available |
 | GUI notebook | Available |
 | Primary training dataset | Available |
 | Basic output CSV files | Available |
@@ -61,4 +61,4 @@ Open and run:
 - `CatBoost/Catboost frc compressive.ipynb`
 - `GUI/Gui compressive.ipynb`
 
-The CatBoost notebook reads `frc_compressive_strength.csv` and writes the basic output files under `CatBoost/outputs/`.
+The CatBoost notebook reads `frc_compressive_strength.csv` and writes CatBoost-specific basic output files under `CatBoost/outputs/`.
